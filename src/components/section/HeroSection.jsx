@@ -20,7 +20,7 @@ function HeroSection() {
         style={{ fontSize: "30px", fontWeight: "600" }}
         className="w-full p-4 text-center sm:w-1/2"
       >
-        Hello, I'm Daffa. I'm a full-stack developer with 8 years of experience.
+        Hello, I&apos;m Daffa. I&apos;m a full-stack developer with 8 years of experience.
         I enjoy building sites & apps. My focus is React (Next.js).
       </h1>
       <div className="flex flex-row flex-wrap items-center justify-center gap-3">
