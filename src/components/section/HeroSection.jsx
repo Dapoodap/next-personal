@@ -6,7 +6,7 @@ import { SiGithub, SiLinkedin } from 'react-icons/si';
 
 function HeroSection() {
   return (
-    <div className="flex flex-col items-center justify-center gap-4">
+    <div id="home" className="flex flex-col items-center justify-center gap-4">
       <div className="relative w-24 h-24">
         <Image
           src={me}
