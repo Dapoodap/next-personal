@@ -1,15 +1,39 @@
+/* globals.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
     background-image: linear-gradient(to right, #9F7AEA, #FAD0C4);
-  }
+    transition: color 0.3s ease-in-out;
 
+}
 
-.konten{
-  font-size: 16px;
-  word-spacing: 2px;
-  font-weight: 500;
+.dark body {
+    background-image: linear-gradient(to right, #4B5563, #1F2937);
+    color: white;
+}
+.dark body .skil-text {
+    color: black;
+}
+.dark body .proj-text {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+.dark body .edu-text {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+.dark body .year {
+    color: black;
+}
+.dark body .skil-wrap {
+    background-color: #eaeaea;
+}
 
+.konten {
+    font-size: 16px;
+    word-spacing: 2px;
+    font-weight: 500;
 }

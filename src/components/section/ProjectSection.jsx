@@ -22,7 +22,7 @@ function ProjectSection() {
           <div className="flex flex-col justify-between">
             <div className="flex flex-col">
               <h2 className="mb-2 text-xl font-semibold">The Coldest Sunset</h2>
-              <p className="text-base text-gray-700">
+              <p className="text-base proj-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatibus quia, nulla! Maiores et perferendis eaque,
                 exercitationem praesentium nihil.
