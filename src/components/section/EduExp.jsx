@@ -1,8 +1,8 @@
 import React from 'react';
-
+import { motion } from 'framer-motion';
 const EduExp = ({ date, title, description, isLast }) => {
   return (
-    <div className="relative w-full px-10 m-auto sm:w-1/2">
+    <div className="relative w-full px-10 m-auto cursor-pointer sm:w-1/2">
       {/* Border line */}
       {!isLast && <div className="absolute top-0 h-full mt-16 border-l-2 border-gray-300 border-solid mx-11 left-5"></div>}
       <div className={`flex ${isLast ? 'mb-0' : 'mb-20'}`}>
@@ -11,10 +11,17 @@ const EduExp = ({ date, title, description, isLast }) => {
             <p className="text-lg font-semibold year">{date}</p>
           </div>
         </div>
-        <div>
+        <motion.div
+        whileHover={{ 
+          scale:1.05
+         }}
+         transition={{ 
+          duration:0.3
+          }}
+        >
           <h2 className="mb-1 text-lg font-semibold">{title}</h2>
           <p className='edu-text'>{description}</p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
@@ -55,19 +62,57 @@ const VerticalTimeline = () => {
   ];
 
   return (
-    <div id='edu' className="container py-16 mx-auto">
-        <h1  style={{ fontSize:'30px',fontWeight:'500',letterSpacing:'1px',textAlign:'center' }} className='mb-11'>Education and Experience</h1>
+    <div id='edu' style={{ height:'100%'}} className="container flex items-center mx-auto">
+       <div>
+       <motion.h1
+       initial={{ 
+        opacity:0,
+        x:-100
+       }}
+       whileInView={{ 
+        opacity:1,
+        x:0
+        }}
+        transition={{ 
+          duration:1
+         }} 
+       style={{ fontSize:'30px',fontWeight:'500',letterSpacing:'1px',textAlign:'center' }} className='mb-11'>Education and Experience</motion.h1>
       <div className="relative">
         {timelineData.map((item, index) => (
-          <EduExp
-            key={index}
+          <motion.div
+          className='cursor-pointer'
+          initial={{ 
+            opacity:0,
+            x:-100,
+            y:-100
+          
+         }}
+         whileInView={{ 
+            opacity:1,
+            x:0,
+            y:0
+           
+          }}
+         
+          exit={{ 
+            opacity:0
+           }}
+          transition={{ 
+            type:'spring',
+            delay:(0.3*index)
+           }}
+           viewport={{ once: true }}
+          key={index}>
+            <EduExp
             date={item.date}
             title={item.title}
             description={item.description}
             isLast={index === timelineData.length - 1}
           />
+          </motion.div>
         ))}
       </div>
+       </div>
     </div>
   );
 };

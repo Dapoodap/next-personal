@@ -17,6 +17,9 @@ body {
 .dark body .skil-text {
     color: black;
 }
+.dark body .navbar__item {
+    color: white;
+}
 .dark body .proj-text {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));

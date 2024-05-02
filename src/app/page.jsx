@@ -9,6 +9,7 @@ import SkillSection from "@/components/section/SkillSection";
 import EduExp from "@/components/section/EduExp";
 import ContactSection from "@/components/section/ContactSection";
 import Footer from "@/components/Footer";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -25,19 +26,22 @@ export default function Home() {
   };
 
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <Navbar />
       <div className="fixed z-50 bottom-4 right-4">
-        <button
+        <motion.button
+        whileTap={{ 
+          scale:1.2
+         }}
           className="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-lg focus:outline-none dark:bg-gray-800"
           onClick={toggleDarkMode}
         >
           {darkMode ? (
             <FiSun className="text-yellow-500 dark:text-yellow-300" />
           ) : (
-            <FiMoon className="text-gray-700 dark:text-gray-300" />
+            <FiMoon className="text-gray-200 dark:text-gray-300" />
           )}
-        </button>
+        </motion.button>
       </div>
       <div className="mt-28 sm:mt-32">
         <HeroSection />
