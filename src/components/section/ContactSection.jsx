@@ -10,25 +10,25 @@ function ContactSection() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    // if (!email || !message) {
-    //   alert("Please fill in all fields");
-    //   return;
-    // }
+    if (!email || !message) {
+      alert("Please fill in all fields");
+      return;
+    }
 
-    // emailjs
-    //   .send("service_w70or3x", "template_d6d5byu", {from_name: "Web Personal", user_email:email, message },{publicKey: 'cn59HlqiuCdFVNUf0',})
-    //   .then(
-    //     (response) => {
-    //       console.log("Email sent successfully!", response);
-    //       alert("Email sent successfully!");
-    //       setEmail('')
-    //       setMessage('')
-    //     },
-    //     (error) => {
-    //       console.error("Failed to send email:", error);
-    //       alert("Failed to send email. Please try again later.");
-    //     }
-    //   );
+    emailjs
+      .send("service_w70or3x", "template_d6d5byu", {from_name: "Web Personal", user_email:email, message },{publicKey: 'cn59HlqiuCdFVNUf0',})
+      .then(
+        (response) => {
+          console.log("Email sent successfully!", response);
+          alert("Email sent successfully!");
+          setEmail('')
+          setMessage('')
+        },
+        (error) => {
+          console.error("Failed to send email:", error);
+          alert("Failed to send email. Please try again later.");
+        }
+      );
   };
 
   return (

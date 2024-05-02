@@ -33,7 +33,7 @@ export default function Home() {
         whileTap={{ 
           scale:1.2
          }}
-          className="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-lg focus:outline-none dark:bg-gray-800"
+          className="flex items-center justify-center w-12 h-12 bg-gray-800 rounded-full shadow-lg focus:outline-none dark:bg-gray-800"
           onClick={toggleDarkMode}
         >
           {darkMode ? (

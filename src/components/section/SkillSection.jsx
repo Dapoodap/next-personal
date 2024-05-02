@@ -63,7 +63,7 @@ function SkillSection() {
                    }}
                    viewport={{ once: true }}
                    
-                key={index} className='flex items-center justify-center h-8 px-3 py-1 bg-gray-100 rounded-md skil-wrap bbackdrop-filter backdrop-blur-lg bg-opacity-65 w-fit'>
+                key={index} className='flex items-center justify-center h-8 px-3 py-1 bg-gray-100 border rounded-md skil-wrap bbackdrop-filter backdrop-blur-lg bg-opacity-65 w-fit'>
                 <p className='skil-text'>{skill}</p>
             </motion.div>
                 </AnimatePresence>

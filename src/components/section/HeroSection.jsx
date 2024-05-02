@@ -10,7 +10,7 @@ function HeroSection() {
     window.open('https://drive.google.com/drive/folders/1ItWNgmq3qskziO_sOfONKXDeOqaTEZLB?usp=drive_link', "_blank");
   };
   const goToWa = () => {
-    window.open('wa.link/vz1d3u', "_blank");
+    window.open('https://wa.me/62895360965318', "_blank");
   };
   const variant  = {
     initial : {
