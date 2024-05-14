@@ -14,6 +14,7 @@ import fotoin from "../../assets/project/fotoin.png";
 import weatherApp from "../../assets/project/weather.png";
 import docAPIBatik from "../../assets/project/docapi.png";
 import docAPIGreenish from "../../assets/project/docapi2.png";
+import kanban from "../../assets/project/todoR.png";
 
 function ProjectSection() {
   const projects = [
@@ -100,10 +101,18 @@ function ProjectSection() {
     {
       title: "Weather App",
       img: weatherApp,
-      tools: ["Next.js", "WeatherAPI.com"],
+      tools: ["Next.js", "WeatherAPI.com","TailwindCSS"],
       desc: "Weather App built with Next.js, fetching weather data from WeatherAPI.com.",
       link: "https://github.com/Dapoodap/next-weather-app",
       hashtags: ["#Website", "#Weather", "#Nextjs"]
+    },
+    {
+      title: "Kanban Todo App",
+      img: kanban,
+      tools: ["React.js", "RecoilJs","TailwindCSS"],
+      desc: "This app help user to manage their activies with kanban method. Build with Recoil as the State Management for managing global state.",
+      link: "https://github.com/Dapoodap/Todo-Recoil",
+      hashtags: ["#Website", "#Kanban", "#Todo"]
     },
     {
       title: "Restfull API For BAtikfy",
