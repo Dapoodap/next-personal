@@ -15,6 +15,7 @@ import weatherApp from "../../assets/project/weather.png";
 import docAPIBatik from "../../assets/project/docapi.png";
 import docAPIGreenish from "../../assets/project/docapi2.png";
 import kanban from "../../assets/project/todoR.png";
+import pilem from "../../assets/project/pilem.png";
 
 function ProjectSection() {
   const projects = [
@@ -112,6 +113,14 @@ function ProjectSection() {
       tools: ["React.js", "RecoilJs","TailwindCSS"],
       desc: "This app help user to manage their activies with kanban method. Build with Recoil as the State Management for managing global state.",
       link: "https://github.com/Dapoodap/Todo-Recoil",
+      hashtags: ["#Website", "#Kanban", "#Todo"]
+    },
+    {
+      title: "Pilemku App",
+      img: pilem,
+      tools: ["Next.js", "TMDB_API","TailwindCSS"],
+      desc: "Landing page and movies overview for user to check updated movie. Provided data by TMDB",
+      link: "https://github.com/Dapoodap/next-movie",
       hashtags: ["#Website", "#Kanban", "#Todo"]
     },
     {
