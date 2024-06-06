@@ -16,6 +16,7 @@ import docAPIBatik from "../../assets/project/docapi.png";
 import docAPIGreenish from "../../assets/project/docapi2.png";
 import kanban from "../../assets/project/todoR.png";
 import pilem from "../../assets/project/pilem.png";
+import unsaid from "../../assets/project/unsaid.png";
 
 function ProjectSection() {
   const projects = [
@@ -114,6 +115,14 @@ function ProjectSection() {
       desc: "This app help user to manage their activies with kanban method. Build with Recoil as the State Management for managing global state.",
       link: "https://github.com/Dapoodap/Todo-Recoil",
       hashtags: ["#Website", "#Kanban", "#Todo"]
+    },
+    {
+      title: "Unsaid Web App",
+      img: unsaid,
+      tools: ["Next.js","TailwindCSS","ReactQuery"],
+      desc: "This app help user to read some confession from some peoples and write their own confession.",
+      link: "https://github.com/Dapoodap/unsaid-web",
+      hashtags: ["#Website", "#Confess", "#ReactQuery"]
     },
     {
       title: "Pilemku App",
